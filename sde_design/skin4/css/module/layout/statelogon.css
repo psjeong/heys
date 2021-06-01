@@ -1,0 +1,13 @@
+.xans-layout-statelogon {}
+.xans-layout-statelogon > a { }
+.xans-layout-statelogon .myinfo { color:#757575; }
+.xans-layout-statelogon .myinfo strong { color:#353535; }
+.xans-layout-statelogon .myinfo a { padding:0 4px 0 10px; color:#757575; font-size:12px; }
+.xans-layout-statelogon > a .count,
+.xans-layout-statelogon > a .count span {
+  height:14px;
+  font-weight:bold; color:#222;
+  font-size:11px; line-height:14px;
+  vertical-align:top;
+  background-position:right -26px;
+}

@@ -1,0 +1,13 @@
+.xans-layout-orderbasketcount {
+  position: absolute; top:0; right:100%;
+  width:56px;height: 56px;
+  background-color: #fff;
+  border:3px solid #222;
+  box-sizing: border-box;
+  overflow:hidden;
+  color:#222; *zoom:1;
+}
+.xans-layout-orderbasketcount strong { float:left; font-weight:normal;margin-left: 28%; }
+.xans-layout-orderbasketcount strong a:hover {text-decoration: none;}
+.xans-layout-orderbasketcount span {}
+.xans-layout-orderbasketcount span a { color:#222; font-weight:bold; }
