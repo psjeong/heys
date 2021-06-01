@@ -1,0 +1,158 @@
+
+<div id="header">
+  <div class="topMenu">
+    <div class="inner topList">
+      <div class="topLeft">
+        <div module="Layout_footer" class="serTell">
+          <p>C/S CENTER <span> {$phone}</span></p>
+        </div>
+        <div class="langList">
+          <h2>
+            Language
+            <i class="xi-angle-down-min down"></i>
+            <i class="xi-angle-up-min up"></i>
+          </h2>
+          <div class="langBox">
+            <div module="Layout_multishopList" class="thumb">
+                <!--@css(/css/module/layout/multishopList.css)-->
+                <ul module="Layout_multishopListitem">
+                    <li>
+                        <a href="//{$shop_domain}/">
+                            <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+                            Korean
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//{$shop_domain}/">
+                            <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+                            English
+                        </a>
+                    </li>
+                    <li>
+                        <a href="//{$shop_domain}/">
+                            <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+                            Chinese
+                        </a>
+                    </li>
+                </ul>
+                <div module="Layout_multishopListmultioption" class="multiOption">
+                    <a href="#none">
+                        <span module="Layout_multishopListmultioptionCountry" class="ship">
+                            <strong>Ship to</strong><span> : </span>
+                        </span>
+                        <span module="Layout_multishopListmultioptionLanguage" class="language">
+                            <strong>Language</strong><span> : <img src="//img.cafe24.com/img/common/global/{$language_code}_32x24.png" alt="" />{$language_name}</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topRight">
+        <div module="Layout_statelogoff" class="signIn login">
+          <div>
+            <i class="xi-user-o xi-2x"></i>
+              <!--@css(/css/module/layout/statelogoff.css)-->
+              <div class="loginBox">
+                <a href="/member/login.html" class="log">로그인</a>
+                <a href="/myshop/index.html">마이쇼핑</a>
+              </div>
+          </div>
+        </div>
+        <div module="Layout_stateLogon" class="signOut login">
+          <i class="xi-user xi-2x"></i>
+            <!--@css(/css/module/layout/statelogon.css)-->
+            <div class="loginBox">
+              <a href="{$action_logout}" class="log">로그아웃</a>
+              <a href="/myshop/index.html">마이쇼핑</a>
+            </div>
+        </div>
+        <div module="Layout_statelogoff">
+          <a href="/order/basket.html"><i class="xi-cart-o  xi-2x"></i> <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+        </div>
+        <div module="Layout_stateLogon">
+          <a href="/order/basket.html"><i class="xi-cart-o  xi-2x"></i> <span class="count {$basket_count_display|display} {$basket_count_display_class}"><span class="{$basket_count_class}">{$basket_count}</span></span></a>
+        </div>
+        <div class="search">
+          <button class="open"><i class="xi-search xi-2x"></i></button>
+        </div>
+
+      </div><!-- /.topRight -->
+
+    </div><!-- /.inner -->
+    <div class="searchBg">
+      <div module="Layout_SearchHeader" >
+          <!--
+              $product_page=/product/detail.html
+              $category_page=/product/list.html
+          -->
+          <div>
+            <fieldset>
+                <legend>검색</legend>
+                {$form.keyword}<i class="xi-search xi-2x" onclick="{$action_search_submit}"></i><i class="xi-close-thin xi-2x close"></i>
+                <ul class="autoDrop" id="{$search_auto_id}"></ul>
+            </fieldset>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="topFixed">
+  <div class="container">
+    <div class="topArea">
+        <h1 module="Layout_LogoTop">
+            <!--@css(/css/module/layout/logotop.css)-->
+            <a class="black" href="/index.html"><img src="/web/psj/logo_top_b.png" alt="로고"></a>
+        </h1>
+        <div id="category" module="Layout_category">
+            <!--@css(/css/module/layout/category.css)-->
+            <!--@js(/js/module/layout/category.js)-->
+            <div class="position">
+                <ul>
+                    <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                    <li><a href="{$link_product_list}">{$name_or_img_tag}</a></li>
+                    <li><a href="/product/lookbook.html">LOOKBOOK</a></li>
+                    <li><a href="/product/project.html?cate_no=55">PROJECT</a></li>
+                    <li><a href="/board/community.html">COMMUNITY</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="topCuppon">
+          <a target="_blank" href="http://sj926thwjdk2.cafe24.com/product/project.html?cate_no=62" >
+            <span>최대 5만원 CUPPON</span>
+            <i class="xi-download"></i>
+          </a>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+    <div module="Layout_multishopList" class="list">
+        <!--@css(/css/module/layout/multishopList.css)-->
+  <button type="button" class="toggle"><span><img src="//img.cafe24.com/img/common/global/{$current_language_code}_18x12.png" alt="" /> {$current_language}</span></button>
+  <ul module="Layout_multishopListitem">
+      <li class="{$selected_class}">
+          <a href="//{$shop_domain}/">
+              <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+              <span class="name">{$locale_language}</span>
+              <span class="unit">{$currency_code}</span>
+          </a>
+      </li>
+      <li class="{$selected_class}">
+          <a href="//{$shop_domain}/">
+              <img src="//img.cafe24.com/img/common/global/{$language}_32x24.png" alt="" />
+              <span class="name">{$locale_language}</span>
+              <span class="unit">{$currency_code}</span>
+          </a>
+      </li>
+  </ul>
+    <!--</div> -->
+
+</div>
